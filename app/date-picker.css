@@ -1,0 +1,108 @@
+/* =========================
+   Tolino Date Picker
+   ========================= */
+
+.tolino-calendar {
+  background: #09090b !important;
+  border: 1px solid #27272a !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  padding: 14px !important;
+}
+
+/* Header */
+.tolino-calendar .rmdp-header {
+  color: #fff !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
+/* ماه و سال */
+.tolino-calendar .rmdp-header-values {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
+/* روزهای هفته */
+.tolino-calendar .rmdp-week-day {
+  color: #a1a1aa !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+/* روزها */
+.tolino-calendar .rmdp-day span {
+  color: #e4e4e7 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* اندازه خانه روز */
+.tolino-calendar .rmdp-day {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+/* Hover */
+.tolino-calendar .rmdp-day:not(.rmdp-disabled):hover span {
+  background: #27272a !important;
+  color: #fff !important;
+}
+
+/* روز انتخاب شده */
+.tolino-calendar .rmdp-day.rmdp-selected span {
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+
+/* امروز */
+.tolino-calendar .rmdp-today span {
+  border: 1px solid #52525b !important;
+  background: transparent !important;
+}
+
+/* روزهای خارج از ماه */
+.tolino-calendar .rmdp-deactive span {
+  color: #52525b !important;
+}
+
+/* فلش‌های ماه */
+.tolino-calendar .rmdp-arrow {
+  border-color: #e4e4e7 !important;
+}
+
+/* Hover فلش */
+.tolino-calendar .rmdp-arrow-container:hover {
+  background: #27272a !important;
+  box-shadow: none !important;
+}
+
+/* Footer / دکمه‌ها */
+.tolino-calendar .rmdp-button {
+  color: #e4e4e7 !important;
+  font-size: 14px !important;
+}
+
+.tolino-calendar .rmdp-button:hover {
+  background: #27272a !important;
+}
+
+/* Select ماه / سال */
+.tolino-calendar .rmdp-month-picker,
+.tolino-calendar .rmdp-year-picker {
+  background: #09090b !important;
+}
+
+.tolino-calendar .rmdp-month-picker .rmdp-day span,
+.tolino-calendar .rmdp-year-picker .rmdp-day span {
+  color: #e4e4e7 !important;
+  font-size: 15px !important;
+}
+
+.tolino-calendar .rmdp-month-picker .rmdp-day.rmdp-selected span,
+.tolino-calendar .rmdp-year-picker .rmdp-day.rmdp-selected span {
+  background: #fff !important;
+  color: #000 !important;
+}
