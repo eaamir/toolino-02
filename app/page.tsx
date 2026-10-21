@@ -1,4 +1,5 @@
 import ToolGrid from "@/components/tools/ToolGrid";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +17,16 @@ export default function Home() {
       <div className="relative mx-auto flex h-full max-w-6xl flex-col px-6 py-8">
         {/* Header */}
         <header className="mb-8 flex shrink-0 items-center justify-between border-b border-white/10 pb-5">
-          <h1 className="text-3xl font-bold tracking-tight">تولینو</h1>
+          <div className="flex items-center gap-3">
+            <h1 className="text-3xl font-bold tracking-tight">تولینو</h1>
+            <Image
+              src="/logo.png"
+              alt="تولینو"
+              width={64}
+              height={64}
+              className="h-16 w-16"
+            />
+          </div>
 
           <p className="text-sm text-zinc-400">ابزارهای ساده و کاربردی فارسی</p>
         </header>
