@@ -1,4 +1,5 @@
 import ToolGrid from "@/components/tools/ToolGrid";
+import OfferPremium from "@/components/offerPremium";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,9 +15,9 @@ export default function Home() {
         <div className="absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto flex h-full max-w-6xl flex-col px-6 py-8">
+      <div className="relative mx-auto flex h-full max-w-6xl flex-col px-6 py-3">
         {/* Header */}
-        <header className="mb-8 flex shrink-0 items-center justify-between border-b border-white/10 pb-5">
+        <header className="mb-4 flex shrink-0 items-center justify-between border-b border-white/10 pb-5">
           <div className="flex items-center gap-3">
             <h1 className="text-3xl font-bold tracking-tight">تولینو</h1>
             <Image
@@ -31,8 +32,11 @@ export default function Home() {
           <p className="text-sm text-zinc-400">ابزارهای ساده و کاربردی فارسی</p>
         </header>
 
-        <div className="min-h-0 flex-1">
-          <ToolGrid />
+        <div className="flex min-h-0 flex-1 flex-col gap-5">
+          <OfferPremium />
+          <div className="min-h-0 flex-1">
+            <ToolGrid />
+          </div>
         </div>
       </div>
     </main>
