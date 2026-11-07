@@ -21,7 +21,7 @@ export default function ToolCard({
         group relative block overflow-hidden rounded-2xl
         border border-white/10
         bg-white/[0.07]
-        p-6
+        p-4 sm:p-6
         shadow-[0_8px_32px_rgba(0,0,0,0.25)]
         backdrop-blur-xl
         transition-all duration-300
@@ -53,12 +53,12 @@ export default function ToolCard({
       {/* Icon */}
       <div
         className="
-          relative mb-5 flex h-14 w-14
+          relative mb-4 flex h-12 w-12
           items-center justify-center
           rounded-2xl
           border border-white/10
           bg-white/8
-          text-3xl
+          text-2xl sm:text-3xl
           shadow-inner shadow-white/5
           backdrop-blur-md
           transition-all duration-300
@@ -70,7 +70,7 @@ export default function ToolCard({
 
       {/* Content */}
       <div className="relative">
-        <h2 className="text-xl font-semibold text-white">{title}</h2>
+        <h2 className="text-lg font-semibold text-white sm:text-xl">{title}</h2>
 
         <p className="mt-2 text-sm leading-6 text-zinc-400">{description}</p>
 
